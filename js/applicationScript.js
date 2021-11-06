@@ -33,7 +33,12 @@
 var client;
 
 var init = function() {
-  
+   var arr = data.songs; 
+ var text = "";
+ arr.forEach(function(item) {
+ text += item.title + ", "
+ }); 
+ document.getElementById("p").innerText = text;
   var iwcCallback = function(intent) {
     // define your reactions on incoming iwc events here 
     console.log(intent);
