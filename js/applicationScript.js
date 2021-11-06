@@ -32,7 +32,7 @@
 
 var client;
 
-var init = function() {
+var init = function() {loadSong()
   var iwcCallback = function(intent) {
     // define your reactions on incoming iwc events here 
     console.log(intent);
