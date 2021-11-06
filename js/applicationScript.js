@@ -52,7 +52,12 @@ var initClient = function(y) {
 
 // loadSong
 var loadSong = function(){
-
+ var arr = data.songs; 
+ var text = "";
+ arr.forEach(function(item) {
+ text += item.title + ", "
+ }); 
+ document.getElementById("p").innerText = text;
 //start variable declaration
 
 //end variable declaration
